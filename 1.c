@@ -106,7 +106,7 @@ void rearrange(int top ,int back)
 	}
 
 	int mid = (back+top+1)/2;
-	printf("%d    %d     %d\n",top,back,mid );
+	
 	if((back-top+1)%2 !=0) 
 	{
 		printf("elements cannot be rearrange by interleaving since elements in memory is odd\n");
