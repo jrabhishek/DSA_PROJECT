@@ -23,11 +23,11 @@ bool isEmpty()
 {
 	return front==-1;
 }
-void insert(int item)
+void insert(int item)                //function to insert the item
 {
 	if (rear == size-1)
 	{
-		printf("memory full\n");
+		printf("memory  is full, unable to enter the item\n");
 		return;
 	}
 	if (front ==-1 && rear == -1)
@@ -41,11 +41,11 @@ void insert(int item)
 
 }
 
-void delete()
+void delete()                    // Function to Delete the item
 {
 	if (front==-1)
 	{
-		printf(" nothing to delete in memory ::::memory empty\n");
+		printf("There is nothing that can be deleted in memory ::::memory empty\n");
 		return;
 	}
 	if (front==rear)
@@ -82,7 +82,7 @@ void reverse(int top,int back)
 
 }
 
-void display()
+void display()                  //Function to Display the item
 {
 	if (isEmpty())
 	{
@@ -97,7 +97,7 @@ void display()
 }
 
 
-void rearrange(int top ,int back)
+void rearrange(int top ,int back)            // Function to Rearrange
 {
 	if (isEmpty())
 	{
